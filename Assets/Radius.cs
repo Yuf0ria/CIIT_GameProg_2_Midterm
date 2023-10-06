@@ -6,7 +6,7 @@ public class Radius : MonoBehaviour
 {
     // Start is called before the first frame update
     public float radius;
-    public Spwnn.EnemyDrop;
+    public PlayerFire shoot;
     void Start()
     {
         
@@ -22,5 +22,23 @@ public class Radius : MonoBehaviour
     {
        Gizmos.color = Color.red;
        Gizmos.DrawWireSphere(transform.position, radius);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("EnemyRed"))
+        {
+            shoot = other.GetComponent<PlayerFire>();
+        }
+        if (other.CompareTag("EnemyBlue"))
+        {
+            shoot = other.GetComponent<PlayerFire>();
+
+        }
+        if (other.CompareTag("EnemyGreen"))
+        {
+            shoot = other.GetComponent<PlayerFire>();
+
+        }
     }
 }

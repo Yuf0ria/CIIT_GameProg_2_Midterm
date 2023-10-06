@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 25741579}
   m_Layer: 0
   m_Name: EnemySpawner
-  m_TagString: Untagged
+  m_TagString: EnemyRed
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -987,6 +987,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 15
+  Enemy: {fileID: 0}
+  shoot: {fileID: 0}
 --- !u!1 &322313599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,7 +1951,7 @@ GameObject:
   - component: {fileID: 882690877}
   m_Layer: 0
   m_Name: EnemySpawner (2)
-  m_TagString: Untagged
+  m_TagString: EnemyBlue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2902,7 +2904,7 @@ GameObject:
   - component: {fileID: 1986375319}
   m_Layer: 0
   m_Name: EnemySpawner (1)
-  m_TagString: Untagged
+  m_TagString: EnemyGreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

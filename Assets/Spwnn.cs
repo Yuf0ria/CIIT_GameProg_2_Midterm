@@ -5,6 +5,8 @@ using UnityEngine;
 public class Spwnn : MonoBehaviour
 {
     public GameObject Enemy;
+    public Transform spawnEnemyHere;
+    public float EnemySpeed;
     public int xPos;
     public int zPos;
     public int enemyCount;// Start is called before the first frame update
@@ -24,6 +26,14 @@ public class Spwnn : MonoBehaviour
             enemyCount += 1;
         }
     }
-    
+    public void UpdateEnemySpeed(Vector2 newSpeed)
+    {
+        GameObject EnemySpawn = Instantiate(Enemy, spawnEnemyHere.position, spawnEnemyHere.rotation);
+        Rigidbody bulletRB = EnemySpawn.GetComponent<Rigidbody>();
+
+        bulletRB.AddForce(spawnEnemyHere.forward * EnemySpeed, ForceMode.Impulse);
+        
+    }
+
 
 }
