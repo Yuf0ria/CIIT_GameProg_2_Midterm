@@ -149,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 25741577}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0041716993, y: -0, z: -0, w: 0.9999913}
-  m_LocalPosition: {x: 7.9, y: 2.1, z: 21.8}
+  m_LocalPosition: {x: 19, y: 2, z: 5.6}
   m_LocalScale: {x: 0.17499, y: 0.12721999, z: 1.09978}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -973,7 +973,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &215552660
 MonoBehaviour:
@@ -1000,8 +1000,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bda3a234b40fa8418819f908e1d6206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanvasOff: {fileID: 1881809841}
-  CanvasOn: {fileID: 1881809841}
+  Canvas: {fileID: 1881809841}
+  isTrigger: {fileID: 7700314148693933820, guid: 06b8d2c74a6fa7142b98f04a00164035,
+    type: 3}
+  isTrigger1: {fileID: 4864515017425542210, guid: ac9ef07e73689dc4aa372367796ca23b,
+    type: 3}
+  isTrigger2: {fileID: 8111753951475175422, guid: bbc52a89df2c3fe42aec61295062d354,
+    type: 3}
 --- !u!1 &322313599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,7 +1079,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2973638401728756674, guid: 91d87b878ece9b34c90208493b802ad2,
     type: 3}
   bulletSpeed: 10
-  fireRate: 5
+  fireRate: 2
 --- !u!65 &322313603
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1090,7 +1095,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1247,7 +1252,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.30751315, y: -0.06807828, z: 0.019922402, w: 0.9488962}
-  m_LocalPosition: {x: 4.2, y: 19.9, z: -25.2}
+  m_LocalPosition: {x: 2.92, y: 13.53, z: -16.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2196,7 +2201,7 @@ Transform:
   m_GameObject: {fileID: 882690876}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0041716993, y: -0, z: -0, w: 0.9999913}
-  m_LocalPosition: {x: 22.5, y: 1.8, z: -27.3}
+  m_LocalPosition: {x: 14.2, y: 1.9, z: -12.6}
   m_LocalScale: {x: 0.17499, y: 0.12721999, z: 1.09978}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2985,7 +2990,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3079,7 +3084,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1356521735718993235, guid: c4823f2b9c962ab489a5cb831c64d8b3,
     type: 3}
   bulletSpeed: 10
-  fireRate: 5
+  fireRate: 2
 --- !u!114 &1732503754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3215,8 +3220,8 @@ Canvas:
   m_GameObject: {fileID: 1881809841}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_RenderMode: 0
+  m_Camera: {fileID: 330585545}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3291,7 +3296,7 @@ Transform:
   m_GameObject: {fileID: 1986375318}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0041716993, y: -0, z: -0, w: 0.9999913}
-  m_LocalPosition: {x: -22.7, y: 2, z: 14.9}
+  m_LocalPosition: {x: -13, y: 2, z: 16}
   m_LocalScale: {x: 0.17499, y: 0.12721999, z: 1.09978}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3508,7 +3513,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8601801761931276314, guid: a27463e3e7a0a2c4a944ca2693eb9e1c,
     type: 3}
   bulletSpeed: 10
-  fireRate: 5
+  fireRate: 2
 --- !u!65 &2086167670
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3524,7 +3529,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3633,9 +3638,9 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 650551463}
+  - {fileID: 1881809847}
   - {fileID: 215552657}
   - {fileID: 25741578}
   - {fileID: 1986375320}
   - {fileID: 882690878}
-  - {fileID: 1881809847}
   - {fileID: 597235105}

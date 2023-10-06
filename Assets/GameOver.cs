@@ -5,10 +5,10 @@ using UnityEngine;
 public class GameOver : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject CanvasOff, CanvasOn;
+    public GameObject Canvas, isTrigger, isTrigger1, isTrigger2;
     void Start()
     {
-        CanvasOff.SetActive(false);
+        Canvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -20,17 +20,17 @@ public class GameOver : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        if (other.CompareTag("EnemyRed"))
+        if (isTrigger)
         {
-            CanvasOn.SetActive(true);
+            Canvas.SetActive(true);
         }
-        else if (other.CompareTag("EnemyBlue"))
+        else if (isTrigger1)
         {
-            CanvasOn.SetActive(true);
+            Canvas.SetActive(true);
         }
-        else if (other.CompareTag("EnemyGreen"))
+        else if (isTrigger2)
         {
-            CanvasOn.SetActive(true);
+            Canvas.SetActive(true);
         }
     }
 }

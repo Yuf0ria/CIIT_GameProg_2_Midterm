@@ -45,13 +45,13 @@ public class EnemyHandler : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
-        else if (other.CompareTag("GreenBullet"))
+        if (other.CompareTag("GreenBullet"))
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
 
         }
-        else if (other.CompareTag("BlueBullet"))
+        if (other.CompareTag("BlueBullet"))
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
