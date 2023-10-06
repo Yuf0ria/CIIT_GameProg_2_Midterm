@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GenerateEnemies : MonoBehaviour
 {
-    public GameObject Enemy, ;
+    public GameObject Enemy;
 
     
     
