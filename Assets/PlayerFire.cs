@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerFire : MonoBehaviour
@@ -36,5 +37,11 @@ public class PlayerFire : MonoBehaviour
 
         bulletRB.AddForce(spawnBulletHere.forward * bulletSpeed, ForceMode.Impulse);
         fireRate = BaseFireRate;
+
+
+    }
+    public void OnMouseCLick()
+    {
+        
     }
 }
