@@ -7,6 +7,7 @@ public class PlayerFire : MonoBehaviour
 {
     public Transform spawnBulletHere;
     public GameObject bulletPrefab;
+    public Radius radius;
     //float Variable of speed bullet
     public float bulletSpeed;
     public float fireRate = 5;
@@ -25,7 +26,7 @@ public class PlayerFire : MonoBehaviour
         fireRate -= Time.deltaTime;
         if ( fireRate <= 0 )
         {
-            shoot();
+            radius = GetComponent<Radius>();
         }
         
     }
@@ -40,4 +41,6 @@ public class PlayerFire : MonoBehaviour
 
 
     }
+
+
 }

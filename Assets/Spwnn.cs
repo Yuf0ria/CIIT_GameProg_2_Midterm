@@ -17,13 +17,17 @@ public class Spwnn : MonoBehaviour
     
     IEnumerator EnemyDrop()
     {
-        while (enemyCount < 2)
+        while (enemyCount <= 1)
         {
             xPos = Random.Range(1, 50);
             zPos = Random.Range(1, 31);
             Instantiate(Enemy, transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(0.50f);
+            yield return new WaitForSeconds(0f);
             enemyCount += 1;
+            if(enemyCount <=0)
+            {
+                enemyCount += 1;
+            }
         }
     }
     public void UpdateEnemySpeed(Vector2 newSpeed)

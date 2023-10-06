@@ -24,21 +24,19 @@ public class Radius : MonoBehaviour
        Gizmos.DrawWireSphere(transform.position, radius);
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnCollision(Collider other)
     {
-        if (other.CompareTag("EnemyRed"))
+        if (other.transform.tag == ("EnemyRed"))
         {
             shoot = other.GetComponent<PlayerFire>();
         }
-        if (other.CompareTag("EnemyBlue"))
+        if (other.transform.tag == ("EnemyGreen"))
         {
             shoot = other.GetComponent<PlayerFire>();
-
         }
-        if (other.CompareTag("EnemyGreen"))
+        if (other.transform.tag == ("EnemyBlue"))
         {
             shoot = other.GetComponent<PlayerFire>();
-
         }
     }
 }
