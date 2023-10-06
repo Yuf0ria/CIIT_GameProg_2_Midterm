@@ -17,9 +17,18 @@ public class GameOver : MonoBehaviour
         
     }
 
-    private void OnCollision(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == ("Player"))
+        
+        if (other.CompareTag("EnemyRed"))
+        {
+            CanvasOn.SetActive(true);
+        }
+        else if (other.CompareTag("EnemyBlue"))
+        {
+            CanvasOn.SetActive(true);
+        }
+        else if (other.CompareTag("EnemyGreen"))
         {
             CanvasOn.SetActive(true);
         }
