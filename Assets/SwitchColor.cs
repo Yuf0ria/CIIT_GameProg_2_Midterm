@@ -12,4 +12,5 @@ public class SwitchColor : MonoBehaviour
         Player.SetActive(true);
         CurrentPlayer.SetActive(false);
     }
+
 }

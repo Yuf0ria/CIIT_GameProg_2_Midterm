@@ -170,7 +170,7 @@ MonoBehaviour:
   Enemy: {fileID: 7700314148693933820, guid: 06b8d2c74a6fa7142b98f04a00164035, type: 3}
   xPos: 30
   zPos: 32
-  enemyCount: 10
+  enemyCount: 1
 --- !u!1 &38763326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1953,7 +1953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &882690877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2862,7 +2862,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1356521735718993235, guid: c4823f2b9c962ab489a5cb831c64d8b3,
     type: 3}
   bulletSpeed: 10
-  fireRate: 5
+  fireRate: 2
 --- !u!114 &1732503754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2906,7 +2906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1986375319
 MonoBehaviour:
   m_ObjectHideFlags: 0

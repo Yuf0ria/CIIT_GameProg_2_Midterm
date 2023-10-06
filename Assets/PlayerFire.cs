@@ -40,8 +40,4 @@ public class PlayerFire : MonoBehaviour
 
 
     }
-    public void OnMouseCLick()
-    {
-        
-    }
 }
