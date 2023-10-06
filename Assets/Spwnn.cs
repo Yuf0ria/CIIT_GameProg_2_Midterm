@@ -24,5 +24,6 @@ public class Spwnn : MonoBehaviour
             enemyCount += 1;
         }
     }
+    
 
 }

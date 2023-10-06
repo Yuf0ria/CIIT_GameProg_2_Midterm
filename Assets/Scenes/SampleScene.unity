@@ -170,7 +170,7 @@ MonoBehaviour:
   Enemy: {fileID: 7700314148693933820, guid: 06b8d2c74a6fa7142b98f04a00164035, type: 3}
   xPos: 30
   zPos: 32
-  enemyCount: 1
+  enemyCount: 10
 --- !u!1 &38763326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1966,10 +1966,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07089c121158e3f40bfe2390cf04cd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 0}
+  Enemy: {fileID: 8111753951475175422, guid: bbc52a89df2c3fe42aec61295062d354, type: 3}
   xPos: 0
   zPos: 0
-  enemyCount: 0
+  enemyCount: 2
 --- !u!4 &882690878
 Transform:
   m_ObjectHideFlags: 0
@@ -2919,10 +2919,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07089c121158e3f40bfe2390cf04cd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 0}
+  Enemy: {fileID: 4864515017425542210, guid: ac9ef07e73689dc4aa372367796ca23b, type: 3}
   xPos: 0
   zPos: 0
-  enemyCount: 0
+  enemyCount: 2
 --- !u!4 &1986375320
 Transform:
   m_ObjectHideFlags: 0
